@@ -16,22 +16,28 @@ document.querySelector('.newsletter form').addEventListener('submit', (event) =>
   button.disabled = true;
 });
 
-const decode = (html) => {
-  const el = document.createElement('textarea');
-  el.innerHTML = html;
-  return el.value;
-};
-const categoryFor = (post) => {
-  if (post.categories.includes(221)) return 'recipe';
-  if (post.categories.includes(230)) return 'tips';
-  return 'food';
-};
-const categoryLabel = (post) => ({ recipe: 'REZEPTE', food: 'ERNÄHRUNG & WISSEN', tips: 'TIPPS' })[categoryFor(post)];
+const categoryLabel = { recipe: 'REZEPTE', food: 'ERNÄHRUNG & WISSEN', tips: 'TIPPS' };
+
+// The archive grid can hold 50+ flip cards. Giving every one of them a live
+// 3D transform context (perspective/preserve-3d) at once is expensive enough
+// to freeze the page, so only cards near the viewport get promoted to 3D —
+// this bounds how many are "flippable" at a time without limiting the effect.
+const flipObserver = new IntersectionObserver(
+  (entries) => entries.forEach((entry) => entry.target.classList.toggle('in-view', entry.isIntersecting)),
+  { rootMargin: '200px 0px' }
+);
+
 const renderArchive = (filter = 'all') => {
-  const visible = filter === 'all' ? posts : posts.filter((post) => categoryFor(post) === filter);
-  archive.innerHTML = visible.map((post) => `<a class="archive-item" href="${post.link}" target="_blank" rel="noopener"><div><p class="tag">${categoryLabel(post)}</p><h3>${decode(post.title.rendered)}</h3></div><span class="archive-meta">${new Intl.DateTimeFormat('de-DE', { month: 'long', year: 'numeric' }).format(new Date(post.date))} &nbsp; →</span></a>`).join('');
+  const visible = filter === 'all' ? posts : posts.filter((post) => post.kind === filter);
+  archive.innerHTML = visible.map((post) => {
+    const back = post.ingredients?.length
+      ? post.ingredients.join(' · ')
+      : post.excerpt || '';
+    return `<a class="archive-item has-photo" href="/${post.slug}/"><div class="flip-inner-v"><div class="archive-photo"><img src="${post.image}" alt="${post.title}" loading="lazy" /></div><div class="archive-overlay"><p class="tag">${categoryLabel[post.kind]}</p><h3>${post.title}</h3><p class="description">${back}</p></div></div></a>`;
+  }).join('');
+  archive.querySelectorAll('.archive-item.has-photo').forEach((el) => flipObserver.observe(el));
 };
-fetch('https://plantiness.com/wp-json/wp/v2/posts?per_page=100&_fields=date,link,title,categories')
+fetch('/data/posts.json')
   .then((response) => {
     if (!response.ok) throw new Error('Archiv nicht verfügbar');
     return response.json();
@@ -41,13 +47,25 @@ fetch('https://plantiness.com/wp-json/wp/v2/posts?per_page=100&_fields=date,link
     renderArchive();
   })
   .catch(() => {
-    archive.innerHTML = '<p class="archive-status">Das Archiv konnte gerade nicht geladen werden. <a href="https://plantiness.com/">Zum Original-Archiv →</a></p>';
+    archive.innerHTML = '<p class="archive-status">Das Archiv konnte gerade nicht geladen werden.</p>';
   });
 document.querySelectorAll('.archive-filter button').forEach((button) => button.addEventListener('click', () => {
   document.querySelector('.archive-filter .active').classList.remove('active');
   button.classList.add('active');
   renderArchive(button.dataset.filter);
 }));
+
+document.addEventListener('click', (event) => {
+  const flipCard = event.target.closest('.recipe-card');
+  const photoCard = event.target.closest('.archive-item.has-photo');
+  const card = flipCard || photoCard;
+  if (!card || window.matchMedia('(hover: hover)').matches) return;
+  const revealClass = flipCard ? 'flipped' : 'revealed';
+  if (!card.classList.contains(revealClass)) {
+    event.preventDefault();
+    card.classList.add(revealClass);
+  }
+});
 
 const savedTheme = localStorage.getItem('plantiness-theme') || 'editorial';
 const setTheme = (theme) => {
