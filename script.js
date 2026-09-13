@@ -16,7 +16,9 @@ document.querySelector('.newsletter form').addEventListener('submit', (event) =>
   button.disabled = true;
 });
 
-const categoryLabel = { recipe: 'REZEPTE', food: 'ERNÄHRUNG & WISSEN', tips: 'TIPPS' };
+// Posts carry their real plantiness.com categories in `cats`. "Rezepte" sits on
+// 41 of 54 posts, so the card label prefers the more specific one behind it.
+const categoryLabel = (post) => (post.cats || []).find((c) => c !== 'Rezepte') || (post.cats || [])[0] || '';
 
 // The archive grid can hold 50+ flip cards. Giving every one of them a live
 // 3D transform context (perspective/preserve-3d) at once is expensive enough
@@ -28,12 +30,12 @@ const flipObserver = new IntersectionObserver(
 );
 
 const renderArchive = (filter = 'all') => {
-  const visible = filter === 'all' ? posts : posts.filter((post) => post.kind === filter);
+  const visible = filter === 'all' ? posts : posts.filter((post) => (post.cats || []).includes(filter));
   archive.innerHTML = visible.map((post) => {
     const back = post.ingredients?.length
       ? post.ingredients.join(' · ')
       : post.excerpt || '';
-    return `<a class="archive-item has-photo" href="/${post.slug}/"><div class="flip-inner-v"><div class="archive-photo"><img src="${post.image}" alt="${post.title}" loading="lazy" /></div><div class="archive-overlay"><p class="tag">${categoryLabel[post.kind]}</p><h3>${post.title}</h3><p class="description">${back}</p></div></div></a>`;
+    return `<a class="archive-item has-photo" href="/${post.slug}/"><div class="flip-inner-v"><div class="archive-photo"><img src="${post.image}" alt="${post.title}" loading="lazy" /></div><div class="archive-overlay"><p class="tag">${categoryLabel(post).toUpperCase()}</p><h3>${post.title}</h3><p class="description">${back}</p></div></div></a>`;
   }).join('');
   archive.querySelectorAll('.archive-item.has-photo').forEach((el) => flipObserver.observe(el));
 };
@@ -67,11 +69,13 @@ document.addEventListener('click', (event) => {
   }
 });
 
-const savedTheme = localStorage.getItem('plantiness-theme') || 'editorial';
-const setTheme = (theme) => {
-  document.body.dataset.theme = theme === 'editorial' ? '' : theme;
-  document.querySelectorAll('.design-switcher button').forEach((button) => button.classList.toggle('active', button.dataset.theme === theme));
-  localStorage.setItem('plantiness-theme', theme);
-};
-setTheme(savedTheme);
-document.querySelectorAll('.design-switcher button').forEach((button) => button.addEventListener('click', () => setTheme(button.dataset.theme)));
+
+// Category links elsewhere on the page (strip, menu, search) jump to the archive
+// and apply their category as the active filter.
+document.querySelectorAll('[data-jump]').forEach((link) => link.addEventListener('click', () => {
+  const target = [...document.querySelectorAll('.archive-filter button')]
+    .find((button) => button.dataset.filter === link.dataset.jump);
+  if (target) target.click();
+  menuDialog.open && menuDialog.close();
+  dialog.open && dialog.close();
+}));

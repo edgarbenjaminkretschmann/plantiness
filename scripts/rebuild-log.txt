@@ -1,0 +1,104 @@
+Processing 54 pages...
+  ok  als-veganer-hast-du-naehrstoffmaengel  hero=kept(0b) thumb(0b) bodyLen=5877
+  ok  apfel-marzipan-muffins-mit-ueberraschungskern  hero=kept(0b) thumb(0b) bodyLen=2683
+  ok  auberginen-vegan-ueberbacken  hero=kept(0b) thumb(0b) bodyLen=2864
+  ok  auf-diese-naehrstoffe-solltest-du-als-veganer-besonders-achten  hero=kept(0b) thumb(0b) bodyLen=9742
+  ok  baerlauch-sammeln-tipps  hero=kept(176308b) thumb(25743b) bodyLen=4982
+  ok  blumenkohlsnack-aus-dem-ofen  hero=downloaded(197682b) thumb(197682b) bodyLen=2321
+  [warn] post-body pattern not found for chia-mandel-pudding, skipping body replace
+  ok  chia-mandel-pudding  hero=kept(0b) thumb(0b) bodyLen=1495
+  [warn] post-body pattern not found for der-fruehstuecksknaller-vegane-omelettes, skipping body replace
+  ok  der-fruehstuecksknaller-vegane-omelettes  hero=downloaded(129088b) thumb(16657b) bodyLen=3222
+  [warn] post-body pattern not found for dezember-wraps-mit-gruenkohl-kuerbis-und-avocado, skipping body replace
+  ok  dezember-wraps-mit-gruenkohl-kuerbis-und-avocado  hero=kept(0b) thumb(0b) bodyLen=2832
+  ok  diy-leinsamensprossen-ganz-einfach-selbst-ziehen-mit-rezept  hero=downloaded(149361b) thumb(24420b) bodyLen=10584
+  ok  echte-fruehstuecks-helden-mischen-ihr-muesli-selbst  hero=kept(0b) thumb(0b) bodyLen=4447
+  ok  feines-mairuebencarpaccio-mit-spargel-und-himbeeren  hero=downloaded(157318b) thumb(19078b) bodyLen=3266
+  [warn] post-body pattern not found for fruchtige-suesskartoffel-paprika-suppe, skipping body replace
+  ok  fruchtige-suesskartoffel-paprika-suppe  hero=kept(0b) thumb(0b) bodyLen=2258
+  [warn] post-body pattern not found for fruchtiger-und-herzhafter-gruenkohl-brotaufstrich, skipping body replace
+  ok  fruchtiger-und-herzhafter-gruenkohl-brotaufstrich  hero=kept(0b) thumb(0b) bodyLen=2987
+  ok  geschmorte-wirsingrouladen-mit-buchweizenfuellung  hero=kept(0b) thumb(0b) bodyLen=3352
+  ok  gesunder-veganer-dip  hero=kept(71954b) thumb(10861b) bodyLen=3292
+  ok  gib-deinem-koerper-was-er-wirklich-braucht-pflanzen  hero=kept(0b) thumb(0b) bodyLen=7172
+  [warn] post-body pattern not found for go-green-veganes-pesto-mit-zitrone-und-petersilie, skipping body replace
+  ok  go-green-veganes-pesto-mit-zitrone-und-petersilie  hero=kept(0b) thumb(0b) bodyLen=2044
+  [warn] post-body pattern not found for gruenkohl-salat-mit-cranberries-und-cashewkernen, skipping body replace
+  ok  gruenkohl-salat-mit-cranberries-und-cashewkernen  hero=kept(0b) thumb(0b) bodyLen=2320
+  ok  gruenkohl-smoothie  hero=kept(0b) thumb(0b) bodyLen=1659
+  ok  guenstig-vegan-essen-geht-nicht-so-kannst-du-gesund-schlemmen  hero=kept(52035b) thumb(9722b) bodyLen=10680
+  ok  herzhafter-jackfruit-burger-mit-sesam-karottensalat  hero=kept(0b) thumb(0b) bodyLen=3541
+  ok  himmlisches-bananeneis-mit-schoko-und-karamell  hero=kept(0b) thumb(0b) bodyLen=2010
+  ok  kaleyeah-ist-der-gruenkohl-hype-zu-recht-vorbei  hero=kept(0b) thumb(0b) bodyLen=2429
+  [warn] post-body pattern not found for kichererbsensuppe-mit-blumenkohl-croutons, skipping body replace
+  ok  kichererbsensuppe-mit-blumenkohl-croutons  hero=kept(0b) thumb(0b) bodyLen=2615
+  ok  linsen-chicoree-pfaennchen-im-suesskartoffelnest  hero=downloaded(135693b) thumb(19116b) bodyLen=3074
+  ok  linsenaufstrich-mit-quinoa-und-curry  hero=kept(176271b) thumb(25675b) bodyLen=2826
+  [warn] post-body pattern not found for linsensuppe-mit-suesskartoffel-und-petersilie, skipping body replace
+  ok  linsensuppe-mit-suesskartoffel-und-petersilie  hero=kept(0b) thumb(0b) bodyLen=3410
+  ok  moon-milk-schlummertrunk-zum-einschlafen  hero=downloaded(127879b) thumb(17311b) bodyLen=3558
+  ok  omega-3-fettsaeuren-algenoel-fuer-veganer-besonders-zu-empfehlen  hero=kept(57244b) thumb(57244b) bodyLen=7778
+  ok  pastinake-trifft-breze-brezenknoedel-mal-anders  hero=downloaded(99363b) thumb(15382b) bodyLen=4821
+  ok  pinkes-sushi-mit-kurkuma-cashew-dip  hero=downloaded(82700b) thumb(15864b) bodyLen=4883
+  [warn] post-body pattern not found for rote-bete-hummus, skipping body replace
+  ok  rote-bete-hummus  hero=kept(0b) thumb(0b) bodyLen=1924
+  ok  rucola-zitronen-hummus  hero=downloaded(158528b) thumb(21651b) bodyLen=2089
+  ok  rustikaler-kartoffelsalat-mit-wuerziger-jackfruit  hero=downloaded(86014b) thumb(12241b) bodyLen=4094
+  ok  schokoladige-nicecream-mit-orangen  hero=kept(0b) thumb(0b) bodyLen=2875
+  ok  superfoods  hero=kept(0b) thumb(0b) bodyLen=5228
+  ok  superleckere-falafel-mit-minz-joghurt-dip  hero=kept(0b) thumb(0b) bodyLen=3974
+  ok  tipp-so-einfach-beugst-du-seelenmangel-vor  hero=kept(0b) thumb(0b) bodyLen=3468
+  ok  vegane-baerlauchcreme  hero=kept(114379b) thumb(15618b) bodyLen=2240
+  ok  vegane-bananen-pancakes  hero=kept(0b) thumb(0b) bodyLen=2527
+  ok  vegane-bohnenbaellchen  hero=kept(0b) thumb(0b) bodyLen=3541
+  ok  vegane-erbsensuppe-baerlauch  hero=downloaded(102221b) thumb(13248b) bodyLen=1658
+  ok  vegane-quiche  hero=kept(205192b) thumb(205192b) bodyLen=3582
+  ok  veganer-hirseauflauf  hero=downloaded(145506b) thumb(16800b) bodyLen=3214
+  ok  veganer-hirsesalat-mit-rucola-blaubeeren-minze  hero=downloaded(177173b) thumb(23985b) bodyLen=1399
+  ok  veganer-schokokuchen-mit-heidelbeeren  hero=kept(174140b) thumb(174140b) bodyLen=3305
+  ok  veganes-suesskartoffel-heidelbeer-dessert  hero=kept(110882b) thumb(17291b) bodyLen=2067
+  [warn] post-body pattern not found for vital-leicht-in-den-tag-rote-bete-smoothie, skipping body replace
+  ok  vital-leicht-in-den-tag-rote-bete-smoothie  hero=kept(0b) thumb(0b) bodyLen=1858
+  ok  vitamin-b12-mangel  hero=kept(80878b) thumb(80878b) bodyLen=8293
+  ok  waermendes-suesskartoffel-curry  hero=kept(0b) thumb(0b) bodyLen=1830
+  ok  was-du-ueber-vegane-aufstriche-wissen-solltest  hero=kept(179160b) thumb(24154b) bodyLen=6841
+  [warn] post-body pattern not found for weihnachtliche-suesskartoffel-schoko-waffeln, skipping body replace
+  ok  weihnachtliche-suesskartoffel-schoko-waffeln  hero=kept(0b) thumb(0b) bodyLen=2394
+  ok  woher-bekommen-veganer-ihr-protein  hero=kept(183156b) thumb(23212b) bodyLen=5904
+
+Applying 13 cross-reference image fixes site-wide...
+  updated cross-refs in apfel-marzipan-muffins-mit-ueberraschungskern\index.html
+  updated cross-refs in auberginen-vegan-ueberbacken\index.html
+  updated cross-refs in blumenkohlsnack-aus-dem-ofen\index.html
+  updated cross-refs in chia-mandel-pudding\index.html
+  updated cross-refs in der-fruehstuecksknaller-vegane-omelettes\index.html
+  updated cross-refs in dezember-wraps-mit-gruenkohl-kuerbis-und-avocado\index.html
+  updated cross-refs in diy-leinsamensprossen-ganz-einfach-selbst-ziehen-mit-rezept\index.html
+  updated cross-refs in feines-mairuebencarpaccio-mit-spargel-und-himbeeren\index.html
+  updated cross-refs in fruchtige-suesskartoffel-paprika-suppe\index.html
+  updated cross-refs in geschmorte-wirsingrouladen-mit-buchweizenfuellung\index.html
+  updated cross-refs in go-green-veganes-pesto-mit-zitrone-und-petersilie\index.html
+  updated cross-refs in gruenkohl-salat-mit-cranberries-und-cashewkernen\index.html
+  updated cross-refs in gruenkohl-smoothie\index.html
+  updated cross-refs in herzhafter-jackfruit-burger-mit-sesam-karottensalat\index.html
+  updated cross-refs in himmlisches-bananeneis-mit-schoko-und-karamell\index.html
+  updated cross-refs in linsen-chicoree-pfaennchen-im-suesskartoffelnest\index.html
+  updated cross-refs in linsensuppe-mit-suesskartoffel-und-petersilie\index.html
+  updated cross-refs in moon-milk-schlummertrunk-zum-einschlafen\index.html
+  updated cross-refs in pastinake-trifft-breze-brezenknoedel-mal-anders\index.html
+  updated cross-refs in pinkes-sushi-mit-kurkuma-cashew-dip\index.html
+  updated cross-refs in rote-bete-hummus\index.html
+  updated cross-refs in rustikaler-kartoffelsalat-mit-wuerziger-jackfruit\index.html
+  updated cross-refs in schokoladige-nicecream-mit-orangen\index.html
+  updated cross-refs in superleckere-falafel-mit-minz-joghurt-dip\index.html
+  updated cross-refs in vegane-baerlauchcreme\index.html
+  updated cross-refs in vegane-bananen-pancakes\index.html
+  updated cross-refs in vegane-bohnenbaellchen\index.html
+  updated cross-refs in veganer-hirseauflauf\index.html
+  updated cross-refs in veganer-hirsesalat-mit-rucola-blaubeeren-minze\index.html
+  updated cross-refs in veganes-suesskartoffel-heidelbeer-dessert\index.html
+  updated cross-refs in vital-leicht-in-den-tag-rote-bete-smoothie\index.html
+  updated cross-refs in waermendes-suesskartoffel-curry\index.html
+  updated cross-refs in weihnachtliche-suesskartoffel-schoko-waffeln\index.html
+
+Done.
