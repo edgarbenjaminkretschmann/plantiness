@@ -11,8 +11,6 @@ const LEGAL_OR_UTILITY = new Set([
   "impressum",
   "datenschutzerklaerung",
   "ueber-plantiness",
-  "fast-geschafft",
-  "vielen-dank-fuer-deine-anmeldung",
 ]);
 
 function listSlugs() {
