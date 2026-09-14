@@ -2,3 +2,8 @@
 
 # Local WordPress media backup (355 MB source archive, not site content)
 Plantiness Content/
+
+# Mobile-check output (local tooling, not site content)
+verify-mobile-screenshots/
+mobile-sweep-screenshots/
+mobile-sweep-report.json
