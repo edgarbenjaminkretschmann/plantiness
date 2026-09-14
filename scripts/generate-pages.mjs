@@ -196,20 +196,19 @@ function escapeAttr(str) {
 }
 
 function siteHeader() {
-  return `<div class="announcement">Kostenloses E-Book: <a href="/#newsletter">7 Tage einfach vegan</a><button aria-label="Hinweis schließen">×</button></div>
-    <header class="site-header">
+  return `<header class="site-header">
       <a class="logo" href="/" aria-label="Plantiness Startseite">plantiness<span>.</span></a>
       <nav aria-label="Hauptnavigation">
         <a href="/#rezepte">Rezepte</a><a href="/#wissen">Wissen</a><a href="/#ueber-uns">Über uns</a>
       </nav>
-      <div class="header-actions"><button class="search" aria-label="Suche öffnen">⌕</button><a class="pill small" href="/#newsletter">Newsletter <span>↗</span></a></div>
+      <div class="header-actions"><button class="search" aria-label="Suche öffnen">⌕</button></div>
       <button class="menu" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i></button>
     </header>`;
 }
 
 function siteFooter() {
   return `<footer><a class="logo" href="/">plantiness<span>.</span></a><p>gesund vegan genießen,<br />jeden Tag ein bisschen mehr.</p><div class="footer-links"><a href="/#rezepte">Rezepte</a><a href="/#wissen">Wissen</a><a href="https://www.instagram.com/plantiness/">Instagram</a><a href="/impressum/">Impressum</a></div><span class="copyright">© 2026 Plantiness</span></footer>
-    <dialog class="menu-dialog"><div class="menu-panel"><button class="close-menu" aria-label="Menü schließen">×</button><a class="logo" href="/">plantiness<span>.</span></a><p class="eyebrow">MENÜ</p><nav><a href="/#rezepte">Rezepte <span>→</span></a><a href="/#wissen">Ernährung & Wissen <span>→</span></a><a href="/#original-archiv">Alle Beiträge <span>→</span></a><a href="/#newsletter">Newsletter <span>→</span></a></nav><div class="menu-categories"><a href="/#rezepte">Frühstück</a><a href="/#rezepte">Suppen</a><a href="/#rezepte">Dips & Saucen</a><a href="/#rezepte">Naschkatzen</a></div></div></dialog>
+    <dialog class="menu-dialog"><div class="menu-panel"><button class="close-menu" aria-label="Menü schließen">×</button><a class="logo" href="/">plantiness<span>.</span></a><p class="eyebrow">MENÜ</p><nav><a href="/#rezepte">Rezepte <span>→</span></a><a href="/#wissen">Ernährung & Wissen <span>→</span></a><a href="/#original-archiv">Alle Beiträge <span>→</span></a></nav><div class="menu-categories"><a href="/#rezepte">Frühstück</a><a href="/#rezepte">Suppen</a><a href="/#rezepte">Dips & Saucen</a><a href="/#rezepte">Naschkatzen</a></div></div></dialog>
     <dialog class="search-dialog"><button class="close-search" aria-label="Suche schließen">×</button><p class="eyebrow">WONACH SUCHST DU?</p><input autofocus placeholder="Rezepte, Zutaten, Themen …" /><div>Beliebt: <a href="#">Pasta</a> · <a href="#">Frühstück</a> · <a href="#">Schnell & einfach</a></div></dialog>
     <script src="/script.js"></script>`;
 }
@@ -405,17 +404,26 @@ async function main() {
 
   // Emit a manifest the homepage's archive script can consume without
   // hitting the old WordPress API live on every visit. Includes enough per
-  // post (image, plus ingredients or an excerpt) for the archive grid's
-  // flip cards to render without fetching each post page.
+  // post (image, excerpt, plus ingredients where it is a recipe) for the
+  // archive grid's cards to render without fetching each post page.
   const manifest = posts
     .map((p) => {
       const parsed = p.kind === "recipe" ? parseRecipe(p.cleanBody) : null;
+      // Some WP lists put their whole ingredient block in one <li> separated by
+      // line breaks, so split those back out before taking the first three.
       const ingredients = parsed
-        ? parsed.groups.flatMap((g) => g.items).slice(0, 3)
+        ? parsed.groups
+            .flatMap((g) => g.items)
+            .flatMap((item) => item.split(/\r?\n/))
+            .map((item) => item.replace(/\s+/g, " ").trim())
+            .filter(Boolean)
+            .slice(0, 3)
         : [];
       const entry = { slug: p.slug, title: p.title, date: p.date, kind: p.kind, image: p.image?.url || FALLBACK_IMG };
+      // Every post carries an excerpt: it is the teaser the archive cards show
+      // next to the photo on mobile, where there is no hover/flip to reveal it.
+      entry.excerpt = textOf(cleanContent(p.excerpt || p.cleanBody)).slice(0, 155);
       if (ingredients.length) entry.ingredients = ingredients;
-      else entry.excerpt = textOf(cleanContent(p.excerpt || p.cleanBody)).slice(0, 155);
       return entry;
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));

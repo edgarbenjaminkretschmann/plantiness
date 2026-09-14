@@ -5,7 +5,7 @@
     "date": "2023-03-16T09:21:31",
     "kind": "tips",
     "image": "/images/originals/vitamin-b12-mangel-thumb.jpg",
-    "excerpt": "Du fühlst dich schlapp und müde? Diese und weitere Symptome wie Stimmungsschwankungen und Verwirrtheit können auf einen Vitamin B12 Mangel hindeuten. Hier ",
+    "excerpt": "Du fühlst dich schlapp und müde? Diese und weitere Symptome wie Stimmungsschwankungen und Verwirrtheit können auf einen Vitamin B12 Mangel hindeuten. Hier",
     "cats": [
       "Ernährung",
       "Ernährungsberatung",
@@ -32,6 +32,7 @@
     "date": "2018-12-15T09:49:00",
     "kind": "recipe",
     "image": "/images/originals/dezember-wraps-mit-gruenkohl-kuerbis-und-avocado-thumb.jpg",
+    "excerpt": "Wraps mit Grünkohl und Kürbis sind ein leckerer Sattmacher an kalten Wintertagen.",
     "ingredients": [
       "3–4 Stängel Grünkohl",
       "ca. 400 g Muskatkürbis (Hokkaido oder Butternut passen auch gut)",
@@ -48,7 +49,6 @@
     "date": "2018-10-21T14:11:06",
     "kind": "recipe",
     "image": "/images/originals/moon-milk-schlummertrunk-zum-einschlafen-thumb.jpg",
-    "ingredients": [],
     "excerpt": "(Anzeige) Moon Milk ist der Schlummertrunk für alle, die nicht mit einem Dornröschenschlaf gesegnet sind. Die Inhaltsstoffe der Moon Milk bauen Stress ab…",
     "cats": [
       "Raw Food",
@@ -61,9 +61,11 @@
     "date": "2018-09-02T12:52:14",
     "kind": "recipe",
     "image": "/images/originals/veganer-hirsesalat-mit-rucola-blaubeeren-minze-thumb.jpg",
+    "excerpt": "Veganer Hirsesalat mit viel würzigem Grün und Blaubeeren. Ob als Vorspeise oder leichter Hauptgang: So geht gesunde, schnelle und geschmacklich ausgewogene",
     "ingredients": [
-      "150 g Hirse \n2 große Handvoll Rucola \n1 Handvoll frische Blaubeeren \n1 Handvoll frische Minze \n½ Handvoll Pinienkerne",
-      "Für das Dressing: Saft einer halben Orange, 4 EL weißer Balsamicoessig, 2 EL Haselnussöl, 1 EL Ahornsirup (oder anderes Süßungsmittel), etwas Salz und Pfeffer"
+      "150 g Hirse",
+      "2 große Handvoll Rucola",
+      "1 Handvoll frische Blaubeeren"
     ],
     "cats": [
       "Raw Food",
@@ -76,9 +78,11 @@
     "date": "2018-08-05T20:34:52",
     "kind": "recipe",
     "image": "/images/originals/veganes-suesskartoffel-heidelbeer-dessert-thumb.jpg",
+    "excerpt": "Das vegane Süßkartoffel-Heidelbeer-Dessert ist perfekt für alle, die sich zwischen fruchtig und schokoladig nicht entscheiden können. In der Plantiness-Küc",
     "ingredients": [
-      "150 g Süßkartoffel \n150 g Heidelbeeren \n100 ml Hafermilch \n100 ml Hafer-Cuisine (Sahneersatz) \nje nach Geschmack etwas Süßungsmittel (z.B.  pürierte Datteln, Reissirup, Agavendicksaft, Zucker, &#8230;) \n4 EL geschrotete Leinsamen \n1 EL Kakaopulver",
-      "Für die Zubereitung brauchst du einen guten Mixer, der es schafft, die Leinsamen zu schroten. Ansonsten bereits geschrotete Leinsamen kaufen. Nachteil: Die werden relativ schnell ranzig."
+      "150 g Süßkartoffel",
+      "150 g Heidelbeeren",
+      "100 ml Hafermilch"
     ],
     "cats": [
       "Für Naschkatzen",
@@ -91,7 +95,6 @@
     "date": "2018-06-24T12:25:13",
     "kind": "recipe",
     "image": "/images/originals/pinkes-sushi-mit-kurkuma-cashew-dip-thumb.jpg",
-    "ingredients": [],
     "excerpt": "Jetzt wird’s pink: Veganes Sushi mit pinkem Reis, cremiger Avocado und einem würzigen Cashewdip mit Kurkuma. Option B ohne Noriblätter: Salat-Sushischiffch",
     "cats": [
       "Aufstriche, Dips & Saucen",
@@ -105,6 +108,7 @@
     "date": "2018-06-03T12:13:39",
     "kind": "recipe",
     "image": "/images/originals/feines-mairuebencarpaccio-mit-spargel-und-himbeeren-thumb.jpg",
+    "excerpt": "An warmen Tagen darf es etwas leichter sein und soll trotzdem satt machen. Das feine Mairübcencarpaccio vereint gesunde, saisonale Lebensmittel: Mairüben,",
     "ingredients": [
       "2 Mairübenknollen",
       "ca. 6 Radieschen",
@@ -135,6 +139,7 @@
     "date": "2018-05-20T12:43:40",
     "kind": "recipe",
     "image": "/images/originals/veganer-schokokuchen-mit-heidelbeeren-thumb.jpg",
+    "excerpt": "Schokolade und Beeren: Zwei Dinge vereint, denen keiner widerstehen kann! Mit den frischen Beeren ist der vegane Schokokuchen schön fruchtig und perfekt fü",
     "ingredients": [
       "180 g feine Haferflocken",
       "100 g gemahlene Mandeln",
@@ -151,7 +156,6 @@
     "date": "2018-05-03T11:48:04",
     "kind": "recipe",
     "image": "/images/originals/diy-leinsamensprossen-ganz-einfach-selbst-ziehen-mit-rezept-thumb.jpg",
-    "ingredients": [],
     "excerpt": "Du willst Sprossen zum ersten Mal selbst ziehen? Für Einsteiger in die Welt der Microgreens eignen sich besonders gut Leinsamensprossen. Die sind genauso…",
     "cats": [
       "Rezepte",
@@ -177,6 +181,7 @@
     "date": "2018-04-13T10:23:48",
     "kind": "recipe",
     "image": "/images/originals/vegane-erbsensuppe-baerlauch-thumb.jpg",
+    "excerpt": "Die knallgrüne Erbsensuppe mit frischem Bärlauch ist absolut gelingsicher und einfach zuzubereiten. Die cremigen, leicht süßen Erbsen ergänzen sich mit der",
     "ingredients": [
       "500 g grüne Erbsen (Frisch- oder Tiefkühlware)",
       "ca. 500 ml Wasser",
@@ -194,6 +199,7 @@
     "date": "2018-04-03T13:06:15",
     "kind": "recipe",
     "image": "/images/originals/vegane-baerlauchcreme-thumb.jpg",
+    "excerpt": "Schnell, lecker & gesund: Vegane Bärlauchcreme einfach selber machen! Zum Rezept →",
     "ingredients": [
       "100 g Salatgurke",
       "100 g gemischte Nüsse (z.B. Walnüsse, Mandeln, Paranüsse, Haselnüsse und Cashewkerne)",
@@ -210,6 +216,7 @@
     "date": "2018-04-02T11:38:27",
     "kind": "recipe",
     "image": "/images/originals/vegane-quiche-thumb.jpg",
+    "excerpt": "Auf der Suche nach einem besonderen Rezept für den Frühling? Wie wäre es mit einer veganen Quiche? Erbsen, Karotten- und Pastinakenscheibchen sind die…",
     "ingredients": [
       "750 g Kartoffeln (Schälgewicht ca. 580g)",
       "100 g Dinkelvollkornmehl",
@@ -226,7 +233,6 @@
     "date": "2018-03-30T11:49:25",
     "kind": "recipe",
     "image": "/images/originals/apfel-marzipan-muffins-mit-ueberraschungskern-thumb.jpg",
-    "ingredients": [],
     "excerpt": "Glutenfreie vegane Muffins mit Marzipan und Apfelstückchen: schnell zubereitet, vegan und lecker – mit Schokokern! Von Außen ist die Schoki nicht zu sehen,",
     "cats": [
       "Für Naschkatzen",
@@ -239,6 +245,7 @@
     "date": "2018-03-28T15:40:56",
     "kind": "recipe",
     "image": "/images/originals/linsen-chicoree-pfaennchen-im-suesskartoffelnest-thumb.jpg",
+    "excerpt": "Chicorée erweckt bei mir schöne Kindheitserinnerungen. Damals habe ich den Salat meistens einfach nur pur als Snack gegessen. Da wurde ein Blatt nach…",
     "ingredients": [
       "3 mittelgroße Süßkartoffeln",
       "2 Chicorée",
@@ -255,6 +262,7 @@
     "date": "2018-03-27T11:25:42",
     "kind": "recipe",
     "image": "/images/originals/der-fruehstuecksknaller-vegane-omelettes-thumb.jpg",
+    "excerpt": "Da Eier in der veganen Ernährung wegfallen, wird auf den ersten Blick auch die Auswahl auf dem Frühstückstisch kleiner. Viele Eierspeisen können mit…",
     "ingredients": [
       "150 g Kichererbsenmehl",
       "250 ml Pflanzenmilch",
@@ -272,6 +280,7 @@
     "date": "2018-03-21T17:36:49",
     "kind": "recipe",
     "image": "/images/originals/veganer-hirseauflauf-thumb.jpg",
+    "excerpt": "Schnell, gesund & lecker: Veganer Hirseauflauf mit Walnüssen. Meal-prep-tauglich & reich an Omega 3!",
     "ingredients": [
       "300 g Hirse",
       "400 ml Mandelmilch",
@@ -289,6 +298,7 @@
     "date": "2018-03-17T16:58:47",
     "kind": "recipe",
     "image": "/images/originals/pastinake-trifft-breze-brezenknoedel-mal-anders-thumb.jpg",
+    "excerpt": "Ihr habt euch mehr deftige Rezepte auf dem Blog gewünscht. Den Anfang machen leckere Brezenknödel mit Pastinaken in einer würzigen Pilzrahmsauce. Getestet:",
     "ingredients": [
       "3 (vegane) Brezen (am besten vom Vortag)",
       "200 ml Pflanzenmilch",
@@ -305,9 +315,10 @@
     "date": "2018-03-15T18:12:18",
     "kind": "recipe",
     "image": "/images/originals/linsenaufstrich-mit-quinoa-und-curry-thumb.jpg",
+    "excerpt": "Du suchst eine gesunde Alternative zu pflanzlichen Fertigaufstrichen? Dann probier doch mal diesen vollwertigen Linsenaufstrich mit Curry. Der besteht nur",
     "ingredients": [
       "Gekochte rote Linsen und Quinoa, beides sehr eiweißreiche, hochwertige Lebensmittel, sind die Grundlage für den Aufstrich. Dazu kommen die milden, ebenfalls sehr nährstoffreichen Pekannüsse. Etwas gesunde Süße gibt ein halber Apfel. Die nötige Würze kommt durch die rote Zwiebel und das Balsamicoessig. Dazu harmoniert perfekt ein bisschen mildes Currypulver.",
-      "Die Zutaten kommen alle in den Mixer und Tadaaa: Dein selbstgemachter, wirklich leckerer, pflanzlicher Linsenaufstrich ist fertig! Im Vergleich zu den meist sehr fettigen, industriell verarbeiteten Aufstrichen aus dem Supermarkt enthält der Linsenaufstrich wesentlich mehr wertvolle Nährstoffe. Da lohnt sich die Mühe doch, oder? 🙂",
+      "Die Zutaten kommen alle in den Mixer und Tadaaa: Dein selbstgemachter, wirklich leckerer, pflanzlicher Linsenaufstrich ist fertig! Im Vergleich zu den meist sehr fettigen, industriell verarbeiteten Aufstrichen aus dem Supermarkt enthält der Linsenaufstrich wesentlich mehr wertvolle Nährstoffe. Da lohnt sich die Mühe doch, oder? 🙂",
       "80 g rote Linsen (Trockengewicht), entspricht ca. 160 g gekochten Linsen"
     ],
     "cats": [
@@ -335,6 +346,7 @@
     "date": "2018-03-06T14:57:02",
     "kind": "recipe",
     "image": "/images/originals/gesunder-veganer-dip-thumb.jpg",
+    "excerpt": "Schon mal einen veganen Dip aus Buchweizen gemacht? Ja, richtig gelesen: Die Grundzutat ist Buchweizen! Der Dip enthält nur wenig Öl, ist soja-…",
     "ingredients": [
       "200 g gekeimter Buchweizen",
       "150 ml Wasser",
@@ -351,6 +363,7 @@
     "date": "2018-03-04T18:55:25",
     "kind": "recipe",
     "image": "/images/originals/rucola-zitronen-hummus-thumb.jpg",
+    "excerpt": "Schon mal Hummus mit Rucola und Zitrone probiert? Der ist so lecker, dass nur eine kleine Portion fürs Rezeptfoto übrig geblieben ist. Mit…",
     "ingredients": [
       "200g Kichererbsen",
       "1 Zitrone (geschält)",
@@ -367,6 +380,7 @@
     "date": "2018-03-02T10:52:07",
     "kind": "recipe",
     "image": "/images/originals/kichererbsensuppe-mit-blumenkohl-croutons-thumb.jpg",
+    "excerpt": "Wenn es draußen so ungemütlich kalt ist, ist eine wärmende Suppe immer willkommen! Die Kichererbsensuppe ist schön cremig und mit Gewürzen wie Ingwer…",
     "ingredients": [
       "500 g Kichererbsen",
       "1 Brokkoli (ca. 350 g)",
@@ -383,6 +397,7 @@
     "date": "2018-02-28T23:01:52",
     "kind": "recipe",
     "image": "/images/originals/blumenkohlsnack-aus-dem-ofen-thumb.jpg",
+    "excerpt": "Ich bin immer auf der Suche nach möglichst gesunden Snacks und Knabbereien. Was wir zur Zeit sehr gerne essen, ist gebackener, leicht panierter…",
     "ingredients": [
       "1 Blumenkohl",
       "ca 3-4 EL Semmelbrösel (ca. 40g)",
@@ -400,7 +415,7 @@
     "date": "2018-02-28T10:44:03",
     "kind": "tips",
     "image": "/images/originals/tipp-so-einfach-beugst-du-seelenmangel-vor-thumb.jpg",
-    "excerpt": "Wusstest du, dass du mit ein bis zwei Paranüssen deinen täglichen Selenbedarf decken kannst? Immer mehr Menschen achten auf eine ausgewogene, gesunde Ernäh",
+    "excerpt": "Wusstest du, dass du mit ein bis zwei Paranüssen deinen täglichen Selenbedarf decken kannst? Immer mehr Menschen achten auf eine ausgewogene, gesunde Ernäh",
     "cats": [
       "Ernährung",
       "Lebensmittel",
@@ -414,6 +429,7 @@
     "date": "2018-02-25T11:38:40",
     "kind": "recipe",
     "image": "/images/originals/vegane-bananen-pancakes-thumb.jpg",
+    "excerpt": "Lässt es sich besser in einen gemütlichen Sonntagmorgen starten als mit Pancakes? Ich liebe es, wenn sich der leckere Duft nach und nach…",
     "ingredients": [
       "150 g Buchweizenmehl",
       "70 g Kichererbsenmehl",
@@ -431,6 +447,7 @@
     "date": "2018-02-23T19:40:19",
     "kind": "recipe",
     "image": "/images/originals/rustikaler-kartoffelsalat-mit-wuerziger-jackfruit-thumb.jpg",
+    "excerpt": "Dieser Kartoffelsalat ist eines meiner Lieblingsgerichte und hat bisher ausnahmslos allen Testessern geschmeckt. Die Jackfruit zieht vor dem Kochen und Anb",
     "ingredients": [
       "12 mittelgroße Kartoffeln",
       "4 Karotten",
@@ -447,6 +464,7 @@
     "date": "2018-02-22T10:01:02",
     "kind": "recipe",
     "image": "/images/originals/geschmorte-wirsingrouladen-mit-buchweizenfuellung-thumb.jpg",
+    "excerpt": "Vorbei sind die Zeiten, in denen die frischen, grünen Blätter des Wirsingkohls mit einer Füllung aus Hackfleisch und Ei ein unglanzvolles Dasein fristeten.",
     "ingredients": [
       "10 Blätter vom Wirsing",
       "200 g Buchweizen",
@@ -476,9 +494,10 @@
     "date": "2018-02-14T16:32:23",
     "kind": "recipe",
     "image": "/images/originals/schokoladige-nicecream-mit-orangen-thumb.jpg",
+    "excerpt": "Nicecream ist für viele eine freudige Überraschung bei der Entdeckung der veganen Küche. Genauso verführerisch wie ein Dessert, nur in gesund. 🙂 Heute…",
     "ingredients": [
       "1 komplett durchgefrorene, reife Banane",
-      "♥ Tipp: Die Banane am besten zerkleinert einfrieren, dann mixt es sich später besser!",
+      "♥ Tipp: Die Banane am besten zerkleinert einfrieren, dann mixt es sich später besser!",
       "1 reife Banane (Zimmertemperatur)"
     ],
     "cats": [
@@ -494,6 +513,7 @@
     "date": "2018-02-08T13:23:16",
     "kind": "recipe",
     "image": "/images/originals/auberginen-vegan-ueberbacken-thumb.jpg",
+    "excerpt": "Wenn du Auberginen liebst, wirst du von dieser Variante wahrscheinlich nicht genug bekommen! Die mit bunten Nüssen und frischer Petersilie überbackenen Aub",
     "ingredients": [
       "2 Auberginen",
       "4 frische Tomaten"
@@ -509,6 +529,7 @@
     "date": "2018-02-07T12:35:38",
     "kind": "recipe",
     "image": "/images/originals/vegane-bohnenbaellchen-thumb.jpg",
+    "excerpt": "Lust auf ausgewogenes Soulfood? Die ohne Fett gebackenen Bällchen aus weißen Bohnen, Couscous, Haferflocken und Sesam sind nährstoffreiche Energiebündel, d",
     "ingredients": [
       "200 g weiße Bohnen (Achtung: Die Bohnen müssen über Nacht in Wasser quellen. Falls du lieber bereits gekochte Bohnen verwenden möchtest, entsprechen 200 g Trockengewicht ca. 500 g gekochten Bohnen.)",
       "100 g Couscous (Trockengewicht)",
@@ -525,10 +546,11 @@
     "date": "2018-01-26T16:00:02",
     "kind": "recipe",
     "image": "/images/originals/herzhafter-jackfruit-burger-mit-sesam-karottensalat-thumb.jpg",
+    "excerpt": "Jackfruit ist schon lange kein Geheimtipp der veganen Küche mehr. Höchste Zeit, den veganen Fleischersatz auszuprobieren! Ein saftiger Jackfruit-Burger ist",
     "ingredients": [
       "1 Dose Jackfruit (In (Salz)wasser eingelegt, nicht in Sirup! Gibt es im Asialaden oder online.)",
       "ca. 100 ml Gemüsebrühe",
-      "Für die Marinade: 3 EL Sojasauce, 2 EL Agavendicksaft, 1 Knoblauchzehe, 2 TL Paprikapulver edelsüß, 1 TL Currypulver"
+      "Für die Marinade: 3 EL Sojasauce, 2 EL Agavendicksaft, 1 Knoblauchzehe, 2 TL Paprikapulver edelsüß, 1 TL Currypulver"
     ],
     "cats": [
       "Sattmacher",
@@ -541,6 +563,7 @@
     "date": "2018-01-23T22:22:53",
     "kind": "recipe",
     "image": "/images/originals/fruchtiger-und-herzhafter-gruenkohl-brotaufstrich-thumb.jpg",
+    "excerpt": "Wenn es um Brotaufstriche geht, kannst du dich zwischen herzhaft und süß nicht entscheiden? Dieser Grünkohl-Brotaufstrich ist beides! Deftiger Grünkohl tri",
     "ingredients": [
       "100 g Grünkohl (ca 3- 4 Stängel)",
       "50 g Cashewkerne (am Abend davor in Wasser einweichen)",
@@ -558,6 +581,7 @@
     "date": "2018-01-20T17:33:59",
     "kind": "recipe",
     "image": "/images/originals/superleckere-falafel-mit-minz-joghurt-dip-thumb.jpg",
+    "excerpt": "Alle lieben Falafel! Die orientalisch gewürzten Kichererbsenbällchen schmecken einfach himmlisch! Ich habe lange getüftelt und viele Varianten ausprobiert.",
     "ingredients": [
       "200 g Kichererbsen (wer spontan kochen möchte, nimmt am besten verzehrfertige aus dem Glas, die sind schon gekocht)",
       "50 g Couscous",
@@ -574,6 +598,7 @@
     "date": "2018-01-17T18:53:14",
     "kind": "recipe",
     "image": "/images/originals/go-green-veganes-pesto-mit-zitrone-und-petersilie-thumb.jpg",
+    "excerpt": "Ob als Brotaufstrich, Verfeinerung von Dips und Salatsaucen oder ganz klassisch in Pasta: Das Spinat-Zitronenpeso ist garantiert schnell verputzt! Die Scha",
     "ingredients": [
       "160 g frischen Spinat",
       "25 g glatte Petersilie",
@@ -604,6 +629,7 @@
     "date": "2018-01-09T09:35:33",
     "kind": "recipe",
     "image": "/images/originals/vital-leicht-in-den-tag-rote-bete-smoothie-thumb.jpg",
+    "excerpt": "Der Rote Bete-Smoothie mit Birne und Zitrone kurbelt deinen Stoffwechsel an. Giftstoffe werden schneller aus dem Körper geleitet und du bekommst einen Ener",
     "ingredients": [
       "1/2 Knolle Rote Bete",
       "1 Birne",
@@ -620,9 +646,10 @@
     "date": "2018-01-05T15:38:38",
     "kind": "recipe",
     "image": "/images/originals/gruenkohl-salat-mit-cranberries-und-cashewkernen-thumb.jpg",
+    "excerpt": "Rohkostfans aufgepasst! Eine der gesündesten Formen, unser heimisches Superfood Grünkohl zu essen, ist in seiner rohen Form. Und der macht, anders als herk",
     "ingredients": [
       "ca. 10 Stängel Grünkohl",
-      "2 EL Cranberries (alternativ: Gojibeeren)",
+      "2 EL Cranberries (alternativ: Gojibeeren)",
       "1 Handvoll Cashewkerne (alternativ: Walnüsse oder Paranüsse)"
     ],
     "cats": [
@@ -636,6 +663,7 @@
     "date": "2018-01-02T15:58:18",
     "kind": "recipe",
     "image": "/images/originals/linsensuppe-mit-suesskartoffel-und-petersilie-thumb.jpg",
+    "excerpt": "Es heißt, wer am Neujahrstag Linsensuppe isst, dem geht das Geld im neuen Jahr nicht aus. Linsensuppe gab es bei uns oft, als…",
     "ingredients": [
       "200g Berglinsen (helle, rot-braune Farbe)",
       "400 g Kartoffeln (entspricht ca. 4 mittelgroßen Kartoffeln)",
@@ -664,6 +692,7 @@
     "date": "2017-12-22T11:19:11",
     "kind": "recipe",
     "image": "/images/originals/fruchtige-suesskartoffel-paprika-suppe-thumb.jpg",
+    "excerpt": "Kein Andünsten oder Anbraten! Einfach Kochen, Pürieren – fertig. Perfekt für Alle, die auch nach einem stressigen Arbeitstag nicht auf eine gesunde und…",
     "ingredients": [
       "½ Liter Wasser",
       "700 g Süßkartoffeln (entspricht ca. 2 großen Süßkartoffeln)",
@@ -680,7 +709,7 @@
     "date": "2017-12-19T19:24:34",
     "kind": "food",
     "image": "/images/originals/gib-deinem-koerper-was-er-wirklich-braucht-pflanzen-thumb.jpg",
-    "excerpt": "Du kennst sie bestimmt, die vielen Heilungswunder, die angeblich mit einer pflanzlichen Ernährung einhergehen. Ganz so einfach ist es natürlich nicht. Wie ",
+    "excerpt": "Du kennst sie bestimmt, die vielen Heilungswunder, die angeblich mit einer pflanzlichen Ernährung einhergehen. Ganz so einfach ist es natürlich nicht. Wie",
     "cats": [
       "Warum vegan?",
       "Ernährung"
@@ -692,6 +721,7 @@
     "date": "2017-12-17T11:25:13",
     "kind": "recipe",
     "image": "/images/originals/weihnachtliche-suesskartoffel-schoko-waffeln-thumb.jpg",
+    "excerpt": "Diese weihnachtlich gewürzten Waffeln aus Süßkartoffeln passen perfekt in die Weihnachtszeit. Ob als Nachmittagssnack zum Kaffee oder auch als besonderes F",
     "ingredients": [
       "370g Süßkartoffel (entspricht ca- einer großen Süßkartoffel)",
       "150g feine Haferflocken",
@@ -708,7 +738,7 @@
     "date": "2017-12-12T16:16:36",
     "kind": "food",
     "image": "/images/originals/auf-diese-naehrstoffe-solltest-du-als-veganer-besonders-achten-thumb.jpg",
-    "excerpt": "Ohne Nährstoffe wäre es unmöglich, zu (über)leben. Sie geben uns Energie und sorgen für einen gesunden Stoffwechsel. Erfahre, welche Nährstoffe in einer pf",
+    "excerpt": "Ohne Nährstoffe wäre es unmöglich, zu (über)leben. Sie geben uns Energie und sorgen für einen gesunden Stoffwechsel. Erfahre, welche Nährstoffe in einer pf",
     "cats": [
       "Nährstoffe",
       "Ernährung"
@@ -720,6 +750,7 @@
     "date": "2017-12-04T11:10:37",
     "kind": "recipe",
     "image": "/images/originals/rote-bete-hummus-thumb.jpg",
+    "excerpt": "Vergiss stark verarbeiteten Fertighummus! Zu Hause kannst du dir ganz einfach und schnell selbst deinen perfekten Hummus zaubern. So verschonst deinen Körp",
     "ingredients": [
       "200g Kichererbsen (Trockengewicht) oder",
       "400 g Kichererbsen aus der Dose (Abtropfgewicht)",
@@ -736,7 +767,6 @@
     "date": "2017-12-03T09:19:09",
     "kind": "recipe",
     "image": "/images/originals/himmlisches-bananeneis-mit-schoko-und-karamell-thumb.jpg",
-    "ingredients": [],
     "excerpt": "Dieses vegane Bananeneis ist perfekt für alle, die auf der Suche nach einem gesunden Dessert sind. Es geht superschnell und ist auch total…",
     "cats": [
       "Für Naschkatzen",
@@ -749,7 +779,7 @@
     "date": "2017-11-30T09:37:51",
     "kind": "food",
     "image": "/images/originals/superfoods-thumb.jpg",
-    "excerpt": "Sie sind superlecker, besonders gesund und voll im Trend. Superfoods gibt es in unzähligen Variationen: getrocknet, mit Schokolade umhüllt, in Pulverform, ",
+    "excerpt": "Sie sind superlecker, besonders gesund und voll im Trend. Superfoods gibt es in unzähligen Variationen: getrocknet, mit Schokolade umhüllt, in Pulverform,",
     "cats": [
       "Lebensmittel",
       "Ernährung"
@@ -761,7 +791,6 @@
     "date": "2017-11-26T22:04:48",
     "kind": "recipe",
     "image": "/images/originals/waermendes-suesskartoffel-curry-thumb.jpg",
-    "ingredients": [],
     "excerpt": "Dieses Curry geht superschnell und wärmt nicht nur den Magen, sondern auch das Gemüt 🙂",
     "cats": [
       "Sattmacher",
@@ -774,9 +803,11 @@
     "date": "2017-11-22T19:26:33",
     "kind": "recipe",
     "image": "/images/originals/chia-mandel-pudding-thumb.jpg",
+    "excerpt": "Bei diesem Chia-Pudding mit Mandeln kommen Naschkatzen ganz ohne schlechtes Gewissen auf ihre Kosten. Mit weihnachtlichen Gewürzen schmeckt er würzig und b",
     "ingredients": [
-      "50g Chiasamen \n 300ml Mandelmilch \n 3 Esslöffel gehackte Mandeln \n 2 Esslöffel Agavendicksaft",
-      "Gewürze: Zimt, Anis, Muskat, Orangenschale, Kardamom, Nelken"
+      "50g Chiasamen",
+      "300ml Mandelmilch",
+      "3 Esslöffel gehackte Mandeln"
     ],
     "cats": [
       "Für Naschkatzen",
@@ -790,7 +821,6 @@
     "date": "2017-11-22T17:17:24",
     "kind": "recipe",
     "image": "/images/originals/gruenkohl-smoothie-thumb.jpeg",
-    "ingredients": [],
     "excerpt": "Glücklicherweise bringt die kalte Jahreszeit nicht nur Kälte, sondern auch Gemüse mit sich, das wir über die warmen Monate lange vermisst haben. Darunter…",
     "cats": [
       "Raw Food",
