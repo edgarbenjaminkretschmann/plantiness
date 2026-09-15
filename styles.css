@@ -84,25 +84,67 @@ body[data-theme="market"] .hero-image{content:url("https://images.unsplash.com/p
    the page and wears the same clothes: bordered tiles, a clay icon, the name
    over a mono post count, lime for the one that is active. Counts and icons
    come from the posts themselves (see script.js). */
-.archive-filter{display:grid;grid-template-columns:repeat(var(--filter-cols,5),minmax(0,1fr));gap:0;overflow:visible;padding:0;margin:0 0 45px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.archive-filter button{display:grid;grid-template-columns:35px minmax(0,1fr);gap:0 13px;align-items:center;text-align:left;padding:22px clamp(12px,1.6vw,26px);border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);font:400 16px var(--sans);white-space:normal;cursor:pointer;transition:background .2s}
-.archive-filter button b{font-family:"DM Mono",monospace;font-size:9px;font-weight:400;color:#71867e;margin:4px 0 0;opacity:1}
-.archive-filter button:hover{background:var(--cream);color:var(--ink);border-color:var(--line)}
-.archive-filter button.active{background:var(--lime);color:var(--ink);border-color:var(--line)}
-.archive-filter button:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
-.archive-filter button span:not(.category-icon),.archive-filter button b{hyphens:auto;overflow-wrap:break-word}
-/* Two per row once five of them no longer fit, exactly like the strip. */
-@media(max-width:900px){
-  .archive-filter{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .archive-filter button{padding:19px;min-height:88px}
-  .archive-filter button:last-child:nth-child(odd){grid-column:1/-1}
+/* The filter is a row of pills carrying the whole taxonomy. The two topics the
+   site is built around lead, and a hairline sets them apart from the
+   subcategories that hang off them. */
+.archive-filter{display:block;overflow:visible;padding:0;margin:0 0 45px}
+.filter-group{display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.filter-group.main{gap:11px;padding-bottom:19px;border-bottom:1px solid var(--line)}
+.filter-group.rest{padding-top:19px}
+.archive-filter button{display:inline-flex;align-items:center;gap:9px;padding:10px 17px;border:1px solid var(--line);border-radius:40px;background:transparent;color:var(--ink);font:600 13px var(--sans);white-space:nowrap;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.archive-filter button b{font-family:"DM Mono",monospace;font-size:10px;font-weight:400;color:#71867e;transition:color .2s}
+.archive-filter .category-icon{grid-row:auto;font-size:17px;line-height:1}
+.filter-group.main button{padding:12px 22px;font-size:14px;border-color:var(--ink)}
+.filter-group.main button b{font-size:11px}
+.archive-filter button:hover{background:var(--cream);border-color:var(--ink);color:var(--ink)}
+/* Point at a head topic and every subcategory under it takes a clay stroke —
+   and a chosen subcategory strokes the head topic it belongs to. It is the only
+   thing in the row that shows which pills hang together. */
+.archive-filter button.related{border-color:#e7784b;box-shadow:0 0 0 1px #e7784b}
+.archive-filter button.related b{color:#c2622f}
+/* While a head topic is in play the rest of the row steps back, so its branch is
+   what the eye lands on. */
+.archive-filter .filter-group.rest button{transition:background .2s,border-color .2s,color .2s,box-shadow .2s,opacity .28s}
+.archive-filter.has-head .filter-group.rest button:not(.related):not(.active){opacity:.3}
+/* Choosing a head topic runs its branch open, one pill behind the other. */
+.filter-group.rest button.opening{animation:branch-open .44s cubic-bezier(.32,.86,.36,1) both;animation-delay:calc(var(--n,0) * 45ms)}
+@keyframes branch-open{
+  from{opacity:0;transform:translateY(9px) scale(.93)}
+  to{opacity:1;transform:none}
 }
-/* On a phone the row runs edge to edge, so its tiles are exactly as wide as
-   the strip's and the long names stay in one piece. */
+@media(prefers-reduced-motion:reduce){
+  .filter-group.rest button.opening{animation:none}
+}
+.archive-filter button.active{background:var(--ink);border-color:var(--ink);box-shadow:none;color:#fff}
+.archive-filter button.active b{color:var(--lime)}
+.archive-filter button.active .category-icon{color:var(--lime)}
+.archive-filter button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* A phone fits three or four of them to a line, so the pills tighten rather
+   than the row growing into a wall. */
 @media(max-width:760px){
-  .archive-filter{margin:0 -25px 34px;border-left:0}
-  .archive-filter button{grid-template-columns:30px minmax(0,1fr);gap:0 10px}
-  .archive-filter button:nth-child(even),.archive-filter button:last-child:nth-child(odd){border-right:0}
+  .archive-filter{margin:0 0 32px}
+  .filter-group{gap:7px}
+  .filter-group.main{gap:9px;padding-bottom:15px}
+  .filter-group.rest{padding-top:15px}
+  .archive-filter button{padding:9px 13px;font-size:12px;gap:6px}
+  /* Six head pills at desktop size would stack one per line on a phone, so down
+     here they keep only their ink border and icon to mark the tier. */
+  .filter-group.main button{padding:9px 13px;font-size:12px}
+  .filter-group.main button b{font-size:10px}
+  .archive-filter .category-icon{font-size:14px}
+  /* The pivot: only the branch below the head topic in play is on screen. */
+  .archive-filter button.off-pivot,.archive-filter.pivot-closed .filter-group.rest{display:none}
+  .archive-filter.pivot-closed .filter-group.main{border-bottom:0;padding-bottom:0}
+  /* The pivot already says which head topic these belong to, so the clay stroke
+     would only be noise down here — it stays on the head topic itself, which is
+     what tells you where in the tree you are standing. */
+  .filter-group.rest button.related{border-color:var(--line);box-shadow:none}
+  .filter-group.rest button.related b{color:#71867e}
+}
+/* On the narrowest phones the icon is the one thing that pushes each head pill
+   onto a line of its own — six of them then fill half the screen. */
+@media(max-width:359px){
+  .filter-group.main .category-icon{display:none}
 }
 /* Narrow phones: a little less air around the label so "Für Naschkatzen"
    still fits on one line per word instead of snapping mid-word. */

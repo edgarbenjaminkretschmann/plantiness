@@ -40,7 +40,8 @@
     ],
     "cats": [
       "Sattmacher",
-      "Rezepte"
+      "Rezepte",
+      "Zum Mitnehmen"
     ]
   },
   {
@@ -86,7 +87,8 @@
     ],
     "cats": [
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Eis & Desserts"
     ]
   },
   {
@@ -99,7 +101,8 @@
     "cats": [
       "Aufstriche, Dips & Saucen",
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Zum Mitnehmen"
     ]
   },
   {
@@ -147,7 +150,8 @@
     ],
     "cats": [
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Kuchen & Gebäck"
     ]
   },
   {
@@ -224,7 +228,8 @@
     ],
     "cats": [
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Warme Küche"
     ]
   },
   {
@@ -236,7 +241,8 @@
     "excerpt": "Glutenfreie vegane Muffins mit Marzipan und Apfelstückchen: schnell zubereitet, vegan und lecker – mit Schokokern! Von Außen ist die Schoki nicht zu sehen,",
     "cats": [
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Kuchen & Gebäck"
     ]
   },
   {
@@ -253,7 +259,8 @@
     ],
     "cats": [
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Warme Küche"
     ]
   },
   {
@@ -271,7 +278,9 @@
     "cats": [
       "Frühstück",
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Warme Küche",
+      "Herzhafter Start"
     ]
   },
   {
@@ -289,7 +298,9 @@
     "cats": [
       "Frühstück",
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Kuchen & Gebäck",
+      "Süßer Start"
     ]
   },
   {
@@ -306,7 +317,8 @@
     ],
     "cats": [
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Warme Küche"
     ]
   },
   {
@@ -324,7 +336,8 @@
     "cats": [
       "Aufstriche, Dips & Saucen",
       "Frühstück",
-      "Rezepte"
+      "Rezepte",
+      "Herzhafter Start"
     ]
   },
   {
@@ -438,7 +451,9 @@
     "cats": [
       "Frühstück",
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Kuchen & Gebäck",
+      "Süßer Start"
     ]
   },
   {
@@ -455,7 +470,8 @@
     ],
     "cats": [
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Zum Mitnehmen"
     ]
   },
   {
@@ -472,7 +488,8 @@
     ],
     "cats": [
       "Rezepte",
-      "Sattmacher"
+      "Sattmacher",
+      "Warme Küche"
     ]
   },
   {
@@ -504,7 +521,9 @@
       "Für Naschkatzen",
       "Frühstück",
       "Raw Food",
-      "Rezepte"
+      "Rezepte",
+      "Eis & Desserts",
+      "Süßer Start"
     ]
   },
   {
@@ -537,7 +556,8 @@
     ],
     "cats": [
       "Sattmacher",
-      "Rezepte"
+      "Rezepte",
+      "Warme Küche"
     ]
   },
   {
@@ -554,7 +574,8 @@
     ],
     "cats": [
       "Sattmacher",
-      "Rezepte"
+      "Rezepte",
+      "Zum Mitnehmen"
     ]
   },
   {
@@ -589,7 +610,8 @@
     ],
     "cats": [
       "Sattmacher",
-      "Rezepte"
+      "Rezepte",
+      "Warme Küche"
     ]
   },
   {
@@ -729,7 +751,8 @@
     ],
     "cats": [
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Kuchen & Gebäck"
     ]
   },
   {
@@ -770,7 +793,8 @@
     "excerpt": "Dieses vegane Bananeneis ist perfekt für alle, die auf der Suche nach einem gesunden Dessert sind. Es geht superschnell und ist auch total…",
     "cats": [
       "Für Naschkatzen",
-      "Rezepte"
+      "Rezepte",
+      "Eis & Desserts"
     ]
   },
   {
@@ -794,7 +818,8 @@
     "excerpt": "Dieses Curry geht superschnell und wärmt nicht nur den Magen, sondern auch das Gemüt 🙂",
     "cats": [
       "Sattmacher",
-      "Rezepte"
+      "Rezepte",
+      "Warme Küche"
     ]
   },
   {
@@ -812,7 +837,8 @@
     "cats": [
       "Für Naschkatzen",
       "Raw Food",
-      "Rezepte"
+      "Rezepte",
+      "Eis & Desserts"
     ]
   },
   {
