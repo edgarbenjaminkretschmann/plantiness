@@ -24,14 +24,8 @@ body[data-theme="market"] .hero-image{content:url("https://images.unsplash.com/p
 /* Mobile: the flip cards go flat. Touch has no hover, and a wall of photos that
    only give up their title on a first tap tells a phone visitor nothing — so
    below 760px the photo shrinks to a thumbnail and the tag, title and teaser sit
-   next to it permanently, with the filter row parked under the sticky header. */
+   next to it permanently. */
 @media(max-width:760px){
-  .archive-filter{position:sticky;top:68px;z-index:3;gap:7px;margin:0 -25px;padding:14px 25px;background:var(--paper);border-bottom:1px solid var(--line);scrollbar-width:none;-webkit-overflow-scrolling:touch}
-  .archive-filter::-webkit-scrollbar{display:none}
-  /* Fades the last chip out at the edge so the row reads as scrollable
-     rather than cut off. */
-  .archive-filter{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 38px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 38px),transparent)}
-  .archive-filter button{padding:10px 15px;font-size:12px}
   .archive-grid{border-top:0;border-left:0}
   .archive-item{min-height:0}
   .archive-item.has-photo{border-right:0}
@@ -62,4 +56,105 @@ body[data-theme="market"] .hero-image{content:url("https://images.unsplash.com/p
   .recipe-card .flip-back .tag{color:#638076;margin:0 0 8px}
   .recipe-card .flip-back h3{color:var(--ink)}
   .recipe-card .flip-back .description{color:#587067}
+}
+
+/* The menu slides out from the right and back in instead of blinking into
+   place. The dialog element stays open for the whole exit slide — script.js
+   waits out the transition before calling close() — and the panel's links
+   stagger in behind it. */
+.menu-dialog{transform:translateX(100%);transition:transform .42s cubic-bezier(.32,.86,.36,1)}
+.menu-dialog.is-open{transform:none}
+.menu-dialog::backdrop{opacity:0;transition:opacity .42s ease}
+.menu-dialog.is-open::backdrop{opacity:1}
+.menu-panel>.logo,.menu-panel .eyebrow,.menu-panel nav a,.menu-categories a{opacity:0;transform:translateX(34px);transition:opacity .34s ease,transform .34s cubic-bezier(.32,.86,.36,1)}
+.menu-dialog.is-open .menu-panel>.logo,.menu-dialog.is-open .menu-panel .eyebrow,.menu-dialog.is-open .menu-panel nav a,.menu-dialog.is-open .menu-categories a{opacity:1;transform:none}
+.menu-dialog.is-open .menu-panel .eyebrow{transition-delay:.1s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(1){transition-delay:.14s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(2){transition-delay:.19s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(3){transition-delay:.24s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(4){transition-delay:.29s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(5){transition-delay:.34s}
+.menu-dialog.is-open .menu-panel nav a:nth-child(n+6){transition-delay:.38s}
+.menu-dialog.is-open .menu-categories a{transition-delay:.4s}
+/* Going out, everything leaves with the panel — no staggered delays to sit
+   through before the slide starts. */
+.menu-dialog:not(.is-open) .menu-panel>.logo,.menu-dialog:not(.is-open) .menu-panel .eyebrow,.menu-dialog:not(.is-open) .menu-panel nav a,.menu-dialog:not(.is-open) .menu-categories a{transition-duration:.16s;transition-delay:0s}
+
+/* The filter row carries the same four categories as the strip at the top of
+   the page and wears the same clothes: bordered tiles, a clay icon, the name
+   over a mono post count, lime for the one that is active. Counts and icons
+   come from the posts themselves (see script.js). */
+.archive-filter{display:grid;grid-template-columns:repeat(var(--filter-cols,5),minmax(0,1fr));gap:0;overflow:visible;padding:0;margin:0 0 45px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.archive-filter button{display:grid;grid-template-columns:35px minmax(0,1fr);gap:0 13px;align-items:center;text-align:left;padding:22px clamp(12px,1.6vw,26px);border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink);font:400 16px var(--sans);white-space:normal;cursor:pointer;transition:background .2s}
+.archive-filter button b{font-family:"DM Mono",monospace;font-size:9px;font-weight:400;color:#71867e;margin:4px 0 0;opacity:1}
+.archive-filter button:hover{background:var(--cream);color:var(--ink);border-color:var(--line)}
+.archive-filter button.active{background:var(--lime);color:var(--ink);border-color:var(--line)}
+.archive-filter button:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.archive-filter button span:not(.category-icon),.archive-filter button b{hyphens:auto;overflow-wrap:break-word}
+/* Two per row once five of them no longer fit, exactly like the strip. */
+@media(max-width:900px){
+  .archive-filter{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .archive-filter button{padding:19px;min-height:88px}
+  .archive-filter button:last-child:nth-child(odd){grid-column:1/-1}
+}
+/* On a phone the row runs edge to edge, so its tiles are exactly as wide as
+   the strip's and the long names stay in one piece. */
+@media(max-width:760px){
+  .archive-filter{margin:0 -25px 34px;border-left:0}
+  .archive-filter button{grid-template-columns:30px minmax(0,1fr);gap:0 10px}
+  .archive-filter button:nth-child(even),.archive-filter button:last-child:nth-child(odd){border-right:0}
+}
+/* Narrow phones: a little less air around the label so "Für Naschkatzen"
+   still fits on one line per word instead of snapping mid-word. */
+@media(max-width:400px){
+  .archive-filter button{padding:15px;grid-template-columns:24px minmax(0,1fr);gap:0 8px;font-size:15px}
+  .archive-filter button .category-icon{font-size:23px}
+  .category-strip a{padding:15px;grid-template-columns:24px minmax(0,1fr);gap:0 8px;font-size:15px}
+  .category-strip .category-icon{font-size:23px}
+  .category-strip a span:not(.category-icon),.category-strip b{hyphens:auto;overflow-wrap:break-word}
+}
+.image-frame:has(img.is-broken),.archive-photo:has(img.is-broken),.journal article:has(img.is-broken) img{background:var(--cream)}
+
+
+/* Pressing a tile and the change that follows. Everything here animates only
+   opacity and transform (plus one background fade), so a phone can run it on
+   the compositor: the tile's lime washes in, its icon springs, the heading
+   swaps, and the cards rise in a slow cascade. */
+.archive-filter button,.category-strip a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.archive-filter button{transition:background .4s ease}
+.archive-filter button .category-icon,.category-strip .category-icon{display:inline-block;transition:transform .45s cubic-bezier(.34,1.32,.45,1)}
+.archive-filter button.active .category-icon{transform:scale(1.16)}
+/* Pressed state last, so it also answers a tap on the tile already chosen. */
+.archive-filter button:active,.category-strip a:active{background:var(--cream)}
+.archive-filter button:active .category-icon,.category-strip a:active .category-icon{transform:scale(.84);transition-duration:.12s}
+
+@keyframes archive-swap-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.original-archive .eyebrow.swap{animation:archive-swap-in .5s ease backwards}
+.original-archive h2.swap{animation:archive-swap-in .65s cubic-bezier(.22,.72,.3,1) backwards;animation-delay:.07s}
+
+@keyframes archive-card-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.archive-item.enter{animation:archive-card-in .6s cubic-bezier(.22,.72,.3,1) backwards;animation-delay:calc(var(--i,0)*55ms)}
+
+@media(prefers-reduced-motion:reduce){
+  .archive-filter button,.archive-filter button .category-icon,.category-strip .category-icon{transition:none}
+  .archive-filter button.active .category-icon{transform:none}
+  .original-archive .eyebrow.swap,.original-archive h2.swap,.archive-item.enter{animation:none}
+}
+
+/* The same Küche/Website switch the /new pages carry, thrown to the website
+   side. Hover, focus or press slides the knob over and names where it goes. */
+.k-switch{display:inline-flex;align-items:center;gap:9px;padding:6px 10px;border-radius:30px;font:600 13px var(--sans);color:#638076;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.k-switch:hover{color:var(--ink)}
+.k-switch-track{position:relative;width:42px;height:24px;flex:none;border:1px solid var(--line);border-radius:20px;background:var(--cream);transition:background .35s ease,border-color .35s ease}
+.k-switch-track i{position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--paper);box-shadow:0 1px 3px #15382c40;transition:transform .4s cubic-bezier(.32,.86,.36,1)}
+.k-switch:hover .k-switch-track,.k-switch:focus-visible .k-switch-track,.k-switch:active .k-switch-track{background:var(--ink);border-color:var(--ink)}
+.k-switch:hover .k-switch-track i,.k-switch:focus-visible .k-switch-track i,.k-switch:active .k-switch-track i{transform:translateX(18px)}
+.k-switch:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.k-switch-label{display:grid;line-height:1.15}
+.k-switch-label b,.k-switch-label em{grid-area:1/1;font-weight:600;font-style:normal;transition:opacity .3s ease,transform .3s ease}
+.k-switch-label em{color:#e7784b;opacity:0;transform:translateY(5px)}
+.k-switch:hover .k-switch-label b,.k-switch:focus-visible .k-switch-label b,.k-switch:active .k-switch-label b{opacity:0;transform:translateY(-5px)}
+.k-switch:hover .k-switch-label em,.k-switch:focus-visible .k-switch-label em,.k-switch:active .k-switch-label em{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .k-switch-track,.k-switch-track i,.k-switch-label b,.k-switch-label em{transition:none}
 }
