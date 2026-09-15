@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Deine Einkaufsliste aus allen gewählten Plantiness-Rezepten, zusammengefasst und nach Regal sortiert." />
+    <link rel="canonical" href="https://plantiness.com/new/einkaufsliste/" />
+    <title>Einkaufsliste — Plantiness Küche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/new/kueche.css" />
+  </head>
+  <body data-page="list">
+    <header class="k-header">
+      <div class="k-header-inner">
+        <a class="k-logo" href="/new/">plantiness<span>.</span><b>K&uuml;che</b></a>
+        <nav>
+          <a class="k-switch" href="/" aria-label="Zur normalen Website wechseln" title="Zur normalen Website wechseln">
+            <span class="k-switch-track" aria-hidden="true"><i></i></span>
+            <span class="k-switch-label"><b>K&uuml;che</b><em>Website</em></span>
+          </a>
+          <a class="cart-link" href="/new/einkaufsliste/">Einkaufsliste <span class="cart-count" data-empty="1"></span></a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap list-page">
+      <p class="eyebrow">PLANTINESS K&Uuml;CHE</p>
+      <h1 style="font-size:clamp(34px,5vw,54px)">Einkaufs<em>liste.</em></h1>
+      <p style="color:#587067;max-width:52ch;margin:16px 0 30px">Zutaten aus allen gew&auml;hlten Rezepten &mdash;
+        zusammengefasst, nach Regal sortiert und auf deine Portionen gerechnet.</p>
+      <div class="basket" id="basket"></div>
+      <div class="list-actions" id="list-actions" hidden>
+        <button class="btn" id="copy-list" type="button">Teilen / kopieren</button>
+        <button class="btn ghost" id="print-list" type="button">Drucken</button>
+        <button class="btn ghost" id="clear-list" type="button">Liste leeren</button>
+      </div>
+      <div id="list-root" aria-live="polite"></div>
+    </main>
+    <footer class="k-footer">
+      <div class="wrap">
+        <a href="/">plantiness.com</a>
+        <a href="/new/">Alle Rezepte</a>
+        <a href="/new/einkaufsliste/">Einkaufsliste</a>
+        <a href="/ueber-plantiness/">&Uuml;ber Plantiness</a>
+        <a href="/impressum/">Impressum</a>
+        <p class="note">Plantiness K&uuml;che &mdash; Portionsrechner, Kochmodus und Einkaufsliste f&uuml;r die Rezepte von
+          plantiness.com. Mengen werden automatisch umgerechnet und sinnvoll gerundet; beim Kochen bitte mit
+          Augenma&szlig; nachjustieren.</p>
+      </div>
+    </footer>
+    <script src="/new/kueche.js"></script>
+  </body>
+</html>
