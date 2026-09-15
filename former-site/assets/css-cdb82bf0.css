@@ -1,224 +1,48 @@
-/* thai */
 @font-face {
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 400;
-  src: url(nKKZ-Go6G5tXcraBGwCYdA-f91be24d.woff2) format('woff2');
-  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+  src: url(nKKZ-Go6G5tXcrabGwU-183b5abd.ttf) format('truetype');
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  src: url(nKKZ-Go6G5tXcraaGwCYdA-7f467ac3.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  src: url(nKKZ-Go6G5tXcrabGwCYdA-2ac248ce.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 400;
-  src: url(nKKZ-Go6G5tXcraVGwA-6cc99d3b.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
 @font-face {
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 500;
-  src: url(nKKU-Go6G5tXcr5mOBWzVaF5NQ-105f2c4d.woff2) format('woff2');
-  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+  src: url(nKKU-Go6G5tXcr5mOBWpVaQ-96af1b03.ttf) format('truetype');
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 500;
-  src: url(nKKU-Go6G5tXcr5mOBWoVaF5NQ-b13a9d0c.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 500;
-  src: url(nKKU-Go6G5tXcr5mOBWpVaF5NQ-7fd0a7ba.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 500;
-  src: url(nKKU-Go6G5tXcr5mOBWnVaE-efa3379d.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
 @font-face {
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 600;
-  src: url(nKKU-Go6G5tXcr5KPxWzVaF5NQ-604ed781.woff2) format('woff2');
-  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+  src: url(nKKU-Go6G5tXcr5KPxWpVaQ-216542f3.ttf) format('truetype');
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 600;
-  src: url(nKKU-Go6G5tXcr5KPxWoVaF5NQ-02e8f621.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 600;
-  src: url(nKKU-Go6G5tXcr5KPxWpVaF5NQ-82fa59ac.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 600;
-  src: url(nKKU-Go6G5tXcr5KPxWnVaE-110cd5f0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* thai */
 @font-face {
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 700;
-  src: url(nKKU-Go6G5tXcr4uPhWzVaF5NQ-df40a519.woff2) format('woff2');
-  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+  src: url(nKKU-Go6G5tXcr4uPhWpVaQ-9cb9f4f6.ttf) format('truetype');
 }
-/* vietnamese */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 700;
-  src: url(nKKU-Go6G5tXcr4uPhWoVaF5NQ-c9876190.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 700;
-  src: url(nKKU-Go6G5tXcr4uPhWpVaF5NQ-58b6a605.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Kanit';
-  font-style: normal;
-  font-weight: 700;
-  src: url(nKKU-Go6G5tXcr4uPhWnVaE-b834fa49.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
 @font-face {
   font-family: 'Noticia Text';
   font-style: italic;
   font-weight: 400;
-  src: url(VuJodNDF2Yv9qppOePKYRP12YwtVn07tpQ-868bb5cb.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(VuJodNDF2Yv9qppOePKYRP12YwtUn0s-6b034821.ttf) format('truetype');
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: italic;
-  font-weight: 400;
-  src: url(VuJodNDF2Yv9qppOePKYRP12YwtUn07tpQ-18b22236.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: italic;
-  font-weight: 400;
-  src: url(VuJodNDF2Yv9qppOePKYRP12Ywtan04-130cb94e.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
 @font-face {
   font-family: 'Noticia Text';
   font-style: italic;
   font-weight: 700;
-  src: url(VuJrdNDF2Yv9qppOePKYRP12YwPhulvdhDXUeA-2656126f.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(VuJrdNDF2Yv9qppOePKYRP12YwPhulvchDA-fefe3cb9.ttf) format('truetype');
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: italic;
-  font-weight: 700;
-  src: url(VuJrdNDF2Yv9qppOePKYRP12YwPhulvchDXUeA-9e7c15ca.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: italic;
-  font-weight: 700;
-  src: url(VuJrdNDF2Yv9qppOePKYRP12YwPhulvShDU-3a5ce305.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
 @font-face {
   font-family: 'Noticia Text';
   font-style: normal;
   font-weight: 400;
-  src: url(VuJ2dNDF2Yv9qppOePKYRP12aTtYh0o-258ce8f0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(VuJ2dNDF2Yv9qppOePKYRP12aDtd-b63fe237.ttf) format('truetype');
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: normal;
-  font-weight: 400;
-  src: url(VuJ2dNDF2Yv9qppOePKYRP12aDtYh0o-6700ed67.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: normal;
-  font-weight: 400;
-  src: url(VuJ2dNDF2Yv9qppOePKYRP12ZjtY-24321091.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
 @font-face {
   font-family: 'Noticia Text';
   font-style: normal;
   font-weight: 700;
-  src: url(VuJpdNDF2Yv9qppOePKYRP1-3R5Nt2vQnDE-352e59f7.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: normal;
-  font-weight: 700;
-  src: url(VuJpdNDF2Yv9qppOePKYRP1-3R5NtmvQnDE-a613ffc9.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: normal;
-  font-weight: 700;
-  src: url(VuJpdNDF2Yv9qppOePKYRP1-3R5NuGvQ-3af7e03c.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(VuJpdNDF2Yv9qppOePKYRP1-3R5NtmvV-826beae4.ttf) format('truetype');
 }
